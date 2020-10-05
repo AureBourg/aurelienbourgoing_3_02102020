@@ -2,6 +2,125 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="main.css">
-        <title>Ohmyfood !</title>
+        <link rel="stylesheet" href=".public/main.css">
+        <title>Ohmyfood!</title>
+        <script src="https://kit.fontawesome.com/bebc52df70.js" crossorigin="anonymous"></script>
     </head>
+
+
+    <body>
+        <header>
+            <img class="header_logo" src="images/logo/ohmyfood@2x.svg" alt="Logo"/>
+        </header>
+
+
+        <div class="localisation">
+            <i class="fas fa-map-marker-alt" class="localisation__icon"></i>
+            <p>Paris, Belleville</p>
+        </div>
+
+        
+        <div class="description">
+            <p>Réservez le menu qui vous convient</p>
+            <span>Découvrez des restaurants d'exception, selectionnés par nos soins.</span><br/>
+            <a href="#restaurants_anchor"><button class="description_button">Explorer nos restaurants</button></a> <!--primary-color-->
+        </div> 
+
+
+        <section class="fonctionnement"> <!--fonctionnement-->
+            <div class="fonctionnement_titre">
+                <p>Fonctionnement</p>
+            </div>
+            <div class="fonctionnement__steps">
+                    <div class="fonctionnement__step1">
+                        <p class="fonctionnement__number1">1</p>
+                        <i class="fas fa-mobile-alt" class="fonctionnement__icon"></i> <!--Icone tel-->
+                        <p>Choisissez un restaurant</p>
+                    </div>
+                    <div class="fonctionnement__step2">
+                        <p class="fonctionnement__number2">2</p>
+                        <i class="fas fa-list" class="fonctionnement__icon"></i> <!--Icone liste-->
+                        <p>Composez votre menu</p>
+                    </div>
+                    <div class="fonctionnement__step3">
+                        <p class="fonctionnement__number3">3</p>
+                        <i class="fas fa-store" class="fonctionnement__icon"></i> <!--Icone restau primary-color-->
+                        <p>Dégustez au restaurant</p>
+                    </div>
+            </div>
+        </section> 
+
+
+        <section class="restaurants" id="restaurants_anchor"> <!--restaurants-->
+            <div class="restaurants_titre">
+                <p>Restaurants</p>
+            </div>
+            <div class="restaurants_div">
+                <a href="link_la-palette-du-gout.html">
+                    <div class="restaurants_div_link1">
+                        <div class="restaurants_div_link1_text">
+                            <span>La palette du gout</span>
+                            <p>Ménilmontant</p>
+                            <i class="far fa-heart"></i> <!--Icone coeur-->
+                        </div>
+                        <div class="restaurants_div_link1_new">
+                            <p>Nouveau</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="restaurants_div_link2">
+                        <div class="restaurants_div_link2_text">
+                            <span>La note enchantée</span>
+                            <p>Charonne</p>
+                            <i class="far fa-heart"></i> <!--Icone coeur-->
+                        </div>
+                        <div class="restaurants_div_link2_new">
+                            <p>Nouveau</p>
+                        </div> <!--tertiary-color-->
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="restaurants_div_link3">
+                        <div class="restaurants_div_link3_text">
+                            <span>A la française</span>
+                            <p>Cité-Rouge</p>
+                            <i class="far fa-heart"></i> <!--Icone coeur-->
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="restaurants_div_link4">
+                        <div class="restaurants_div_link4_text">
+                            <span>Le délice des sens</span>
+                            <p>Folie Méricourt</p>
+                            <i class="far fa-heart"></i> <!--Icone coeur-->
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+
+        <footer>
+            <img href="#" src="images/logo/ohmyfood@2x.svg" alt="Logo" fill="white"/> <!--logo-->
+            <a href="#">
+                <div class="footer_link1">
+                    <i class="fas fa-utensils fa-xs"></i> <!--Icone fourchette-->
+                    <p>Proposer un restaurant</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="footer_link2">
+                    <i class="fas fa-hands-helping fa-xs"></i> <!--Icone poignée de main-->
+                    <p>Devenir partenaire</p>
+                </div>
+            </a>
+            <a href="#">
+                <p>Mentions légales</p>
+            </a>
+            <a href="#">
+                <p>Contact</p>
+            </a>
+        </footer>
+    </body>
