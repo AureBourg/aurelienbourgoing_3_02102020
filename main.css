@@ -2,14 +2,17 @@
   font-family: "Roboto";
   src: url(../roboto/Roboto-Medium.ttf);
 }
+
 @font-face {
   font-family: "Roboto-bold";
   src: url(../roboto/Roboto-Bold.ttf);
 }
+
 @font-face {
   font-family: "Roboto-light";
   src: url(../roboto/Roboto-Light.ttf);
 }
+
 body {
   font-family: "Roboto", sans-serif;
   width: 100%;
@@ -29,19 +32,27 @@ header {
   padding: 10px;
   border-bottom: solid 2px lightgrey;
 }
+
 header img {
   width: 190px;
   height: auto;
 }
 
 .localisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #dedede;
   padding: 10px;
   font-size: 14px;
 }
+
 .localisation p {
   margin: 0px 0px 0px 10px;
 }
@@ -51,30 +62,38 @@ header img {
   background: #f4f4f4;
   padding: 20px 0px 20px 0px;
 }
+
 .description p {
   padding: 10px 50px 10px 50px;
   margin: 0px;
   font-size: 18px;
   font-family: "Roboto-bold";
 }
+
 .description span {
   margin: 0px;
   font-size: 14px;
   font-family: "Roboto-light";
 }
+
 .description_button {
   font-family: "Roboto-light";
   font-size: 13px;
+  text-align: center;
   color: white;
+  background: -webkit-gradient(linear, right bottom, left top, from(#9356dc), to(#ff79da));
   background: linear-gradient(to top left, #9356dc, #ff79da);
   border: none;
   height: 40px;
+  width: 100px;
   border-radius: 20px;
   margin: 15px 0px 15px 0px;
   padding: 0px 15px 0px 15px;
-  box-shadow: 1px 1px 3px grey;
+  -webkit-box-shadow: 1px 1px 3px grey;
+          box-shadow: 1px 1px 3px grey;
   cursor: pointer;
 }
+
 .description a {
   width: auto;
 }
@@ -82,27 +101,37 @@ header img {
 .fonctionnement {
   margin: 30px 20px 0px 20px;
 }
+
 .fonctionnement_titre {
   font-size: 22px;
   font-family: "Roboto-bold";
 }
+
 .fonctionnement__steps {
   margin: 10px;
 }
+
 .fonctionnement__step1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #f4f4f4;
   border-radius: 15px;
-  box-shadow: 2px 2px 5px grey;
+  -webkit-box-shadow: 2px 2px 5px grey;
+          box-shadow: 2px 2px 5px grey;
   padding: 0px 10px 0px 10px;
   font-size: 13px;
   margin-bottom: 20px;
 }
+
 .fonctionnement__step1 i {
   color: grey;
   padding: 0px 20px 0px 0px;
 }
+
 .fonctionnement__number1 {
   color: white;
   background-color: #9356dc;
@@ -111,37 +140,53 @@ header img {
   position: relative;
   right: 20px;
 }
+
 .fonctionnement__step2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #f4f4f4;
   border-radius: 15px;
-  box-shadow: 2px 2px 5px grey;
+  -webkit-box-shadow: 2px 2px 5px grey;
+          box-shadow: 2px 2px 5px grey;
   padding: 0px 10px 0px 10px;
   font-size: 13px;
   margin-bottom: 20px;
 }
+
 .fonctionnement__step2 i {
   color: grey;
   padding: 0px 20px 0px 0px;
 }
+
 .fonctionnement__step3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #f4f4f4;
   border-radius: 15px;
-  box-shadow: 2px 2px 5px grey;
+  -webkit-box-shadow: 2px 2px 5px grey;
+          box-shadow: 2px 2px 5px grey;
   padding: 0px 10px 0px 10px;
   font-size: 13px;
   margin-bottom: 20px;
 }
+
 .fonctionnement__step3 i {
   color: grey;
   padding: 0px 20px 0px 0px;
 }
+
 .fonctionnement__step3 i {
   color: #9356dc;
 }
+
 .fonctionnement__number2 {
   color: white;
   background-color: #9356dc;
@@ -150,6 +195,7 @@ header img {
   position: relative;
   right: 20px;
 }
+
 .fonctionnement__number3 {
   color: white;
   background-color: #9356dc;
@@ -158,6 +204,7 @@ header img {
   position: relative;
   right: 20px;
 }
+
 .fonctionnement a {
   text-decoration: none;
   color: black;
@@ -169,22 +216,33 @@ header img {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 .restaurants_titre {
   margin-left: 20px;
   font-size: 22px;
   font-family: "Roboto-bold";
 }
+
 .restaurants_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0px 20px 0px 20px;
 }
+
 .restaurants_div a {
   width: 100%;
   margin-bottom: 20px;
   text-decoration: none;
 }
+
 .restaurants_div_link1 {
   height: 150px;
   background-size: cover;
@@ -192,9 +250,11 @@ header img {
   background-position-y: -30px;
   position: relative;
   border-radius: 15px;
-  box-shadow: 2px 2px 4px grey;
+  -webkit-box-shadow: 2px 2px 4px grey;
+          box-shadow: 2px 2px 4px grey;
   background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
 }
+
 .restaurants_div_link1_text {
   font-size: 11px;
   text-decoration: none;
@@ -207,39 +267,49 @@ header img {
   top: 100px;
   line-height: 15px;
 }
+
 .restaurants_div_link1_text i {
   position: absolute;
   top: 15px;
   right: 20px;
   font-size: 17px;
 }
+
 .restaurants_div_link1_text i:hover {
   font-weight: bold;
   color: #9356dc;
 }
+
 .restaurants_div_link1_text p {
   font-family: "Roboto-light";
   margin: 0px;
 }
+
 .restaurants_div_link1_text span {
   font-family: "Roboto-bold";
   font-size: 13px;
 }
+
 .restaurants_div_link1_new {
   font-size: 11px;
   color: green;
   background-color: #99e2d0;
   padding: 5px 10px 5px 10px;
   border-radius: 3px;
-  box-shadow: 1px 1px 3px black;
+  -webkit-box-shadow: 1px 1px 3px black;
+          box-shadow: 1px 1px 3px black;
+  width: -webkit-min-content;
+  width: -moz-min-content;
   width: min-content;
   position: absolute;
   top: 10px;
   right: 10px;
 }
+
 .restaurants_div_link1_new p {
   margin: 0px;
 }
+
 .restaurants_div_link2 {
   height: 150px;
   background-size: cover;
@@ -247,9 +317,11 @@ header img {
   background-position-y: -30px;
   position: relative;
   border-radius: 15px;
-  box-shadow: 2px 2px 4px grey;
+  -webkit-box-shadow: 2px 2px 4px grey;
+          box-shadow: 2px 2px 4px grey;
   background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
 }
+
 .restaurants_div_link2_text {
   font-size: 11px;
   text-decoration: none;
@@ -262,39 +334,49 @@ header img {
   top: 100px;
   line-height: 15px;
 }
+
 .restaurants_div_link2_text i {
   position: absolute;
   top: 15px;
   right: 20px;
   font-size: 17px;
 }
+
 .restaurants_div_link2_text i:hover {
   font-weight: bold;
   color: #9356dc;
 }
+
 .restaurants_div_link2_text p {
   font-family: "Roboto-light";
   margin: 0px;
 }
+
 .restaurants_div_link2_text span {
   font-family: "Roboto-bold";
   font-size: 13px;
 }
+
 .restaurants_div_link2_new {
   font-size: 11px;
   color: green;
   background-color: #99e2d0;
   padding: 5px 10px 5px 10px;
   border-radius: 3px;
-  box-shadow: 1px 1px 3px black;
+  -webkit-box-shadow: 1px 1px 3px black;
+          box-shadow: 1px 1px 3px black;
+  width: -webkit-min-content;
+  width: -moz-min-content;
   width: min-content;
   position: absolute;
   top: 10px;
   right: 10px;
 }
+
 .restaurants_div_link2_new p {
   margin: 0px;
 }
+
 .restaurants_div_link3 {
   height: 150px;
   background-size: cover;
@@ -302,9 +384,11 @@ header img {
   background-position-y: -30px;
   position: relative;
   border-radius: 15px;
-  box-shadow: 2px 2px 4px grey;
+  -webkit-box-shadow: 2px 2px 4px grey;
+          box-shadow: 2px 2px 4px grey;
   background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
 }
+
 .restaurants_div_link3_text {
   font-size: 11px;
   text-decoration: none;
@@ -317,24 +401,29 @@ header img {
   top: 100px;
   line-height: 15px;
 }
+
 .restaurants_div_link3_text i {
   position: absolute;
   top: 15px;
   right: 20px;
   font-size: 17px;
 }
+
 .restaurants_div_link3_text i:hover {
   font-weight: bold;
   color: #9356dc;
 }
+
 .restaurants_div_link3_text p {
   font-family: "Roboto-light";
   margin: 0px;
 }
+
 .restaurants_div_link3_text span {
   font-family: "Roboto-bold";
   font-size: 13px;
 }
+
 .restaurants_div_link4 {
   height: 150px;
   background-size: cover;
@@ -342,9 +431,11 @@ header img {
   background-position-y: -30px;
   position: relative;
   border-radius: 15px;
-  box-shadow: 2px 2px 4px grey;
+  -webkit-box-shadow: 2px 2px 4px grey;
+          box-shadow: 2px 2px 4px grey;
   background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
 }
+
 .restaurants_div_link4_text {
   font-size: 11px;
   text-decoration: none;
@@ -357,63 +448,88 @@ header img {
   top: 100px;
   line-height: 15px;
 }
+
 .restaurants_div_link4_text i {
   position: absolute;
   top: 15px;
   right: 20px;
   font-size: 17px;
 }
+
 .restaurants_div_link4_text i:hover {
   font-weight: bold;
   color: #9356dc;
 }
+
 .restaurants_div_link4_text p {
   font-family: "Roboto-light";
   margin: 0px;
 }
+
 .restaurants_div_link4_text span {
   font-family: "Roboto-bold";
   font-size: 13px;
 }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   background: #2d2e2e;
   padding: 15px;
   color: white;
   font-size: 13px;
 }
+
 footer img {
   margin-bottom: 15px;
 }
+
 footer a {
   display: inline-block;
   text-decoration: none;
   color: white;
   margin: 8px;
 }
+
 footer p {
   margin: 0px;
 }
 
 .footer_link1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .footer_link1 p {
   margin-left: 10px;
 }
+
 .footer_link1 i {
   font-size: 1em;
 }
+
 .footer_link2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .footer_link2 p {
   margin-left: 10px;
 }
-
 /*# sourceMappingURL=main.css.map */
