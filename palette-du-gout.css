@@ -134,6 +134,7 @@ header a {
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 15px;
+  overflow: hidden;
 }
 
 .carte_entree_plat1 span {
@@ -142,13 +143,30 @@ header a {
 }
 
 .carte_entree_plat1_prix {
-  position: absolute;
-  right: 20px;
-  bottom: 10px;
+  position: relative;
+  right: 10px;
+  top: 10px;
+}
+
+.carte_entree_plat1_prix {
+  -webkit-transition: -webkit-transform 1000ms;
+  transition: -webkit-transform 1000ms;
+  transition: transform 1000ms;
+  transition: transform 1000ms, -webkit-transform 1000ms;
 }
 
 .carte_entree_plat1:hover {
   cursor: pointer;
+}
+
+.carte_entree_plat1:hover > .check {
+  -webkit-transform: translateX(-65px);
+          transform: translateX(-65px);
+}
+
+.carte_entree_plat1:hover > .carte_entree_plat1_prix {
+  -webkit-transform: translateX(-65px);
+          transform: translateX(-65px);
 }
 
 .carte_entree_plat2 {
@@ -170,6 +188,7 @@ header a {
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 15px;
+  overflow: hidden;
 }
 
 .carte_entree_plat2 span {
@@ -178,9 +197,30 @@ header a {
 }
 
 .carte_entree_plat2_prix {
-  position: absolute;
-  right: 20px;
-  bottom: 10px;
+  position: relative;
+  right: 10px;
+  top: 10px;
+}
+
+.carte_entree_plat2_prix {
+  -webkit-transition: -webkit-transform 1000ms;
+  transition: -webkit-transform 1000ms;
+  transition: transform 1000ms;
+  transition: transform 1000ms, -webkit-transform 1000ms;
+}
+
+.carte_entree_plat2:hover {
+  cursor: pointer;
+}
+
+.carte_entree_plat2:hover > .check {
+  -webkit-transform: translateX(-65px);
+          transform: translateX(-65px);
+}
+
+.carte_entree_plat2:hover > .carte_entree_plat2_prix {
+  -webkit-transform: translateX(-65px);
+          transform: translateX(-65px);
 }
 
 .carte_entree_plat3 {
@@ -202,6 +242,7 @@ header a {
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 15px;
+  overflow: hidden;
 }
 
 .carte_entree_plat3 span {
@@ -210,9 +251,30 @@ header a {
 }
 
 .carte_entree_plat3_prix {
-  position: absolute;
-  right: 20px;
-  bottom: 10px;
+  position: relative;
+  right: 10px;
+  top: 10px;
+}
+
+.carte_entree_plat3_prix {
+  -webkit-transition: -webkit-transform 1000ms;
+  transition: -webkit-transform 1000ms;
+  transition: transform 1000ms;
+  transition: transform 1000ms, -webkit-transform 1000ms;
+}
+
+.carte_entree_plat3:hover {
+  cursor: pointer;
+}
+
+.carte_entree_plat3:hover > .check {
+  -webkit-transform: translateX(-65px);
+          transform: translateX(-65px);
+}
+
+.carte_entree_plat3:hover > .carte_entree_plat3_prix {
+  -webkit-transform: translateX(-65px);
+          transform: translateX(-65px);
 }
 
 .carte_plat {
@@ -255,9 +317,9 @@ header a {
 }
 
 .carte_plat_plat_prix {
-  position: absolute;
-  right: 20px;
-  bottom: 10px;
+  position: relative;
+  right: 10px;
+  top: 10px;
 }
 
 .carte_dessert {
@@ -300,9 +362,9 @@ header a {
 }
 
 .carte_dessert_plat_prix {
-  position: absolute;
-  right: 20px;
-  bottom: 10px;
+  position: relative;
+  right: 10px;
+  top: 10px;
 }
 
 .carte_button_commander {
@@ -384,5 +446,20 @@ footer .footer_link2 {
 
 footer .footer_link2 p {
   margin-left: 10px;
+}
+
+.check {
+  background-color: #99e2d0;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 0px 15px 15px 0px;
+  position: absolute;
+  right: -65px;
+  -webkit-transition: -webkit-transform 1000ms;
+  transition: -webkit-transform 1000ms;
+  transition: transform 1000ms;
+  transition: transform 1000ms, -webkit-transform 1000ms;
+  overflow: hidden;
 }
 /*# sourceMappingURL=palette-du-gout.css.map */

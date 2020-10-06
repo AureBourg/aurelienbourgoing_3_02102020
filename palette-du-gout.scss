@@ -67,15 +67,51 @@ header{
         }
         &_plat1{
             @include carte_plat();
+            overflow: hidden;
+            &_prix{
+                transition: transform 1000ms;
+            }
             &:hover{
                 cursor: pointer;
+            }
+            &:hover > .check{
+                transform: translateX(-65px);
+            }
+            &:hover > .carte_entree_plat1_prix{
+                transform: translateX(-65px);
             }
         }
         &_plat2{
             @include carte_plat();
+            overflow: hidden;
+            &_prix{
+                transition: transform 1000ms;
+            }
+            &:hover{
+                cursor: pointer;
+            }
+            &:hover > .check{
+                transform: translateX(-65px);
+            }
+            &:hover > .carte_entree_plat2_prix{
+                transform: translateX(-65px);
+            }
         }
         &_plat3{
             @include carte_plat();
+            overflow: hidden;
+            &_prix{
+                transition: transform 1000ms;
+            }
+            &:hover{
+                cursor: pointer;
+            }
+            &:hover > .check{
+                transform: translateX(-65px);
+            }
+            &:hover > .carte_entree_plat3_prix{
+                transform: translateX(-65px);
+            }
         }
     }
     &_plat{
@@ -106,4 +142,17 @@ header{
 
 footer{
     @include footer-style();
+}
+
+
+.check{
+    background-color: $tertiary-color;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 0px 15px 15px 0px;
+    position: absolute;
+    right: -65px;
+    transition: transform 1000ms;
+    overflow: hidden;
 }
