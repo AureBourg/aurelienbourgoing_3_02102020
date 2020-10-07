@@ -8,6 +8,7 @@
     font-size: 13px;
     & img{
         margin-bottom: 15px;
+        filter: invert(1);
     }
     & a{
         display: inline-block;

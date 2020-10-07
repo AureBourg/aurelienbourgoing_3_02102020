@@ -34,7 +34,7 @@ header{
             font-size: 20px;
             margin-right: 10px;
             &:hover{
-                font-weight: bold;;
+                font-weight: bold;
                 color: $primary-color;
             }
         }
@@ -42,6 +42,8 @@ header{
     }
     &_entree{
         width: 100%;
+        animation: fondu 1000ms 100ms;
+	    animation-fill-mode: both;
         &_titre{
         @include titre_plat();
         }
@@ -65,6 +67,8 @@ header{
     }
     &_plat{
         width: 100%;
+        animation: fondu 1000ms 300ms;
+	    animation-fill-mode: both;
         &_titre{
             @include titre_plat();
         }
@@ -77,7 +81,7 @@ header{
             &:hover{
                 cursor: pointer;
             }
-            &:hover > .check{
+            &:hover > .check{ 
                 transform: translateX(-65px);
             }
             &:hover > .carte_plat_plat_prix{
@@ -87,6 +91,8 @@ header{
     }
     &_dessert{
         width: 100%;
+        	animation: fondu 1000ms 500ms;
+	        animation-fill-mode: both;
         &_titre{
             @include titre_plat();
         }
@@ -107,6 +113,10 @@ header{
             }
         }
     }
+}
+@keyframes fondu{
+	0%{transform: translateY(-20px); opacity: 0}
+	100%{transform: translateY(0px); opacity: 1}
 }
 
 
