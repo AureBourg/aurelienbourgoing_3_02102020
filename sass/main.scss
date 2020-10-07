@@ -1,18 +1,9 @@
-@font-face{
-    font-family: "Roboto";
-    src: url(../roboto/Roboto-Medium.ttf);
-}
-@font-face{
-    font-family: "Roboto-bold";
-    src: url(../roboto/Roboto-Bold.ttf);
-}
-@font-face{
-    font-family: "Roboto-light";
-    src: url(../roboto/Roboto-Light.ttf);
-}
-@import "./utils/_mixins.scss";
-
-@import "./utils/_variables.scss";
+@import "./utils/_mixins";
+@import "./utils/_variables";
+@import "./base/typography";
+@import "./layouts/footer";
+@import "./layouts/header";
+@import "./pages/menu.scss";
 
 
 body{

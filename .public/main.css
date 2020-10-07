@@ -1,15 +1,267 @@
 @font-face {
   font-family: "Roboto";
-  src: url(../roboto/Roboto-Medium.ttf);
+  src: url(../polices/roboto/Roboto-Medium.ttf);
 }
 @font-face {
   font-family: "Roboto-bold";
-  src: url(../roboto/Roboto-Bold.ttf);
+  src: url(../polices/roboto/Roboto-Bold.ttf);
 }
 @font-face {
   font-family: "Roboto-light";
-  src: url(../roboto/Roboto-Light.ttf);
+  src: url(../polices/roboto/Roboto-Light.ttf);
 }
+@font-face {
+  font-family: "Shrikhand";
+  src: url(../polices/shrikhand/Shrikhand-Regular.ttf);
+}
+body {
+  font-family: "Roboto";
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-bottom: solid 2px lightgrey;
+  align-items: center;
+  position: relative;
+}
+header img {
+  width: 190px;
+  height: auto;
+}
+header a {
+  font-size: 24px;
+  position: absolute;
+  left: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.background img {
+  height: 300px;
+  width: 100%;
+}
+
+.carte {
+  position: relative;
+  bottom: 50px;
+  background-color: #f4f4f4;
+  border-radius: 20px 20px 0px 0px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.carte_head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.carte_head_titre {
+  font-family: "Shrikhand";
+  font-size: 20px;
+}
+.carte_head_like {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.carte_head_like:hover {
+  font-weight: bold;
+  color: #9356dc;
+}
+.carte_entree {
+  width: 100%;
+}
+.carte_entree_titre {
+  font-family: "Roboto-light";
+  border-bottom: #99e2d0 solid 2px;
+  padding-bottom: 5px;
+  width: 40px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.carte_entree_plat {
+  position: relative;
+  background: white;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 2px 2px 3px lightgrey;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.carte_entree_plat span {
+  font-family: "Roboto-light";
+  font-size: 13px;
+}
+.carte_entree_plat_prix {
+  position: relative;
+  right: 10px;
+  top: 10px;
+}
+.carte_entree_plat_prix {
+  transition: transform 1000ms;
+}
+.carte_entree_plat:hover {
+  cursor: pointer;
+}
+.carte_entree_plat:hover > .check {
+  transform: translateX(-65px);
+}
+.carte_entree_plat:hover > .carte_entree_plat_prix {
+  transform: translateX(-65px);
+}
+.carte_plat {
+  width: 100%;
+}
+.carte_plat_titre {
+  font-family: "Roboto-light";
+  border-bottom: #99e2d0 solid 2px;
+  padding-bottom: 5px;
+  width: 40px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.carte_plat_plat {
+  position: relative;
+  background: white;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 2px 2px 3px lightgrey;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.carte_plat_plat span {
+  font-family: "Roboto-light";
+  font-size: 13px;
+}
+.carte_plat_plat_prix {
+  position: relative;
+  right: 10px;
+  top: 10px;
+}
+.carte_plat_plat_prix {
+  transition: transform 1000ms;
+}
+.carte_plat_plat:hover {
+  cursor: pointer;
+}
+.carte_plat_plat:hover > .check {
+  transform: translateX(-65px);
+}
+.carte_plat_plat:hover > .carte_plat_plat_prix {
+  transform: translateX(-65px);
+}
+.carte_dessert {
+  width: 100%;
+}
+.carte_dessert_titre {
+  font-family: "Roboto-light";
+  border-bottom: #99e2d0 solid 2px;
+  padding-bottom: 5px;
+  width: 40px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.carte_dessert_plat {
+  position: relative;
+  background: white;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 2px 2px 3px lightgrey;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.carte_dessert_plat span {
+  font-family: "Roboto-light";
+  font-size: 13px;
+}
+.carte_dessert_plat_prix {
+  position: relative;
+  right: 10px;
+  top: 10px;
+}
+.carte_dessert_plat_prix {
+  transition: transform 1000ms;
+}
+.carte_dessert_plat:hover {
+  cursor: pointer;
+}
+.carte_dessert_plat:hover > .check {
+  transform: translateX(-65px);
+}
+.carte_dessert_plat:hover > .carte_dessert_plat_prix {
+  transform: translateX(-65px);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #2d2e2e;
+  padding: 15px;
+  color: white;
+  font-size: 13px;
+}
+footer img {
+  margin-bottom: 15px;
+}
+footer a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  margin: 8px;
+}
+footer p {
+  margin: 0px;
+}
+footer .footer_link1 {
+  display: flex;
+  align-items: center;
+}
+footer .footer_link1 p {
+  margin-left: 10px;
+}
+footer .footer_link1 i {
+  font-size: 1em;
+}
+footer .footer_link2 {
+  display: flex;
+  align-items: center;
+}
+footer .footer_link2 p {
+  margin-left: 10px;
+}
+
+.check {
+  background-color: #99e2d0;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 0px 15px 15px 0px;
+  position: absolute;
+  right: -65px;
+  transition: transform 1000ms;
+  overflow: hidden;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   width: 100%;
@@ -63,15 +315,16 @@ header img {
   font-family: "Roboto-light";
 }
 .description_button {
-  font-family: "Roboto-light";
-  font-size: 13px;
+  font-family: "Roboto";
+  font-size: 11px;
+  text-align: center;
   color: white;
   background: linear-gradient(to top left, #9356dc, #ff79da);
   border: none;
   height: 40px;
   border-radius: 20px;
   margin: 15px 0px 15px 0px;
-  padding: 0px 15px 0px 15px;
+  padding: 0px 20px 0px 20px;
   box-shadow: 1px 1px 3px grey;
   cursor: pointer;
 }
