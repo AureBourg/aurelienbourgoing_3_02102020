@@ -40,15 +40,31 @@
             position: relative;
             top: 100px;
             line-height: 15px;
-            & i{
+            & .fa-heart1{
+                z-index: 2;
                 position: absolute;
                 top: 15px;
                 right: 20px;
                 font-size: 17px;
+                color: black;
                 &:hover{
-                    font-weight: bold;
-                    color: $primary-color;    
+                    -webkit-text-fill-color: transparent;
                 }
+                &:hover + .fa-heart2{
+                    visibility: visible;
+                }
+            }
+            & .fa-heart2{
+                z-index: 1;
+                position: absolute;
+                top: 15px;
+                right: 20px;
+                font-size: 17px;
+                color: transparent;
+                background: -webkit-gradient(linear, left top, left bottom, from($primary-color), to($secondary-color));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                visibility: hidden;               
             }
             & p{
                 font-family: "Roboto-light";

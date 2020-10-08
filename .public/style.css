@@ -64,13 +64,31 @@ header a {
   font-family: "Shrikhand";
   font-size: 20px;
 }
-.carte_head_like {
+.carte_head .far {
+  position: absolute;
+  right: 30px;
+  top: 25px;
+  z-index: 2;
   font-size: 20px;
-  margin-right: 10px;
+  color: black;
 }
-.carte_head_like:hover {
-  font-weight: bold;
-  color: #9356dc;
+.carte_head .far:hover {
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+.carte_head .far:hover + .fas {
+  visibility: visible;
+}
+.carte_head .fas {
+  position: absolute;
+  right: 30px;
+  top: 25px;
+  z-index: 1;
+  font-size: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  visibility: hidden;
 }
 .carte_entree {
   width: 100%;
@@ -120,6 +138,9 @@ header a {
 .carte_entree_plat:hover > .carte_entree_plat_prix {
   transform: translateX(-65px);
 }
+.carte_entree_plat:hover > .check > .fa-check-circle {
+  transform: rotate(-360deg);
+}
 .carte_plat {
   width: 100%;
   animation: fondu 1000ms 300ms;
@@ -168,6 +189,9 @@ header a {
 .carte_plat_plat:hover > .carte_plat_plat_prix {
   transform: translateX(-65px);
 }
+.carte_plat_plat:hover > .check > .fa-check-circle {
+  transform: rotate(-360deg);
+}
 .carte_dessert {
   width: 100%;
   animation: fondu 1000ms 500ms;
@@ -215,6 +239,9 @@ header a {
 }
 .carte_dessert_plat:hover > .carte_dessert_plat_prix {
   transform: translateX(-65px);
+}
+.carte_dessert_plat:hover > .check > .fa-check-circle {
+  transform: rotate(-360deg);
 }
 
 @keyframes fondu {
@@ -277,6 +304,10 @@ footer .footer_link2 p {
   right: -65px;
   transition: transform 1000ms;
   overflow: hidden;
+}
+
+.fa-check-circle {
+  transition: transform 1000ms;
 }
 
 body {
@@ -482,15 +513,31 @@ header img {
   top: 100px;
   line-height: 15px;
 }
-.restaurants_div_link1_text i {
+.restaurants_div_link1_text .fa-heart1 {
+  z-index: 2;
   position: absolute;
   top: 15px;
   right: 20px;
   font-size: 17px;
+  color: black;
 }
-.restaurants_div_link1_text i:hover {
-  font-weight: bold;
-  color: #9356dc;
+.restaurants_div_link1_text .fa-heart1:hover {
+  -webkit-text-fill-color: transparent;
+}
+.restaurants_div_link1_text .fa-heart1:hover + .fa-heart2 {
+  visibility: visible;
+}
+.restaurants_div_link1_text .fa-heart2 {
+  z-index: 1;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 17px;
+  color: transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  visibility: hidden;
 }
 .restaurants_div_link1_text p {
   font-family: "Roboto-light";
@@ -538,15 +585,31 @@ header img {
   top: 100px;
   line-height: 15px;
 }
-.restaurants_div_link2_text i {
+.restaurants_div_link2_text .fa-heart1 {
+  z-index: 2;
   position: absolute;
   top: 15px;
   right: 20px;
   font-size: 17px;
+  color: black;
 }
-.restaurants_div_link2_text i:hover {
-  font-weight: bold;
-  color: #9356dc;
+.restaurants_div_link2_text .fa-heart1:hover {
+  -webkit-text-fill-color: transparent;
+}
+.restaurants_div_link2_text .fa-heart1:hover + .fa-heart2 {
+  visibility: visible;
+}
+.restaurants_div_link2_text .fa-heart2 {
+  z-index: 1;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 17px;
+  color: transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  visibility: hidden;
 }
 .restaurants_div_link2_text p {
   font-family: "Roboto-light";
@@ -594,15 +657,31 @@ header img {
   top: 100px;
   line-height: 15px;
 }
-.restaurants_div_link3_text i {
+.restaurants_div_link3_text .fa-heart1 {
+  z-index: 2;
   position: absolute;
   top: 15px;
   right: 20px;
   font-size: 17px;
+  color: black;
 }
-.restaurants_div_link3_text i:hover {
-  font-weight: bold;
-  color: #9356dc;
+.restaurants_div_link3_text .fa-heart1:hover {
+  -webkit-text-fill-color: transparent;
+}
+.restaurants_div_link3_text .fa-heart1:hover + .fa-heart2 {
+  visibility: visible;
+}
+.restaurants_div_link3_text .fa-heart2 {
+  z-index: 1;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 17px;
+  color: transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  visibility: hidden;
 }
 .restaurants_div_link3_text p {
   font-family: "Roboto-light";
@@ -635,15 +714,31 @@ header img {
   top: 100px;
   line-height: 15px;
 }
-.restaurants_div_link4_text i {
+.restaurants_div_link4_text .fa-heart1 {
+  z-index: 2;
   position: absolute;
   top: 15px;
   right: 20px;
   font-size: 17px;
+  color: black;
 }
-.restaurants_div_link4_text i:hover {
-  font-weight: bold;
-  color: #9356dc;
+.restaurants_div_link4_text .fa-heart1:hover {
+  -webkit-text-fill-color: transparent;
+}
+.restaurants_div_link4_text .fa-heart1:hover + .fa-heart2 {
+  visibility: visible;
+}
+.restaurants_div_link4_text .fa-heart2 {
+  z-index: 1;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 17px;
+  color: transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  visibility: hidden;
 }
 .restaurants_div_link4_text p {
   font-family: "Roboto-light";

@@ -30,13 +30,31 @@ header{
             font-family: "Shrikhand";
             font-size: 20px;
         }
-        &_like{
+        & .far{
+            position: absolute;
+            right: 30px;
+            top: 25px;
+            z-index: 2;
             font-size: 20px;
-            margin-right: 10px;
+            color: black;
             &:hover{
-                font-weight: bold;
-                color: $primary-color;
+                -webkit-text-fill-color: transparent;
+                cursor: pointer;
             }
+            &:hover + .fas{
+                visibility: visible;
+            }
+        }
+        & .fas{
+            position: absolute;
+            right: 30px;
+            top: 25px;
+            z-index: 1;
+            font-size: 20px;
+            background: -webkit-gradient(linear, left top, left bottom, from($primary-color), to($secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            visibility: hidden;               
         }
 
     }
@@ -61,6 +79,9 @@ header{
             }
             &:hover > .carte_entree_plat_prix{
                 transform: translateX(-65px);
+            }
+            &:hover > .check > .fa-check-circle{
+                transform: rotate(-360deg);
             }
         }
         
@@ -87,6 +108,9 @@ header{
             &:hover > .carte_plat_plat_prix{
                 transform: translateX(-65px);
             }
+            &:hover > .check > .fa-check-circle{
+                transform: rotate(-360deg);
+            }
         }
     }
     &_dessert{
@@ -110,6 +134,9 @@ header{
             }
             &:hover > .carte_dessert_plat_prix{
                 transform: translateX(-65px);
+            }
+            &:hover > .check > .fa-check-circle{
+                transform: rotate(-360deg);
             }
         }
     }
@@ -136,4 +163,8 @@ footer{
     right: -65px;
     transition: transform 1000ms;
     overflow: hidden;
+}
+
+.fa-check-circle{
+    transition: transform 1000ms;
 }
