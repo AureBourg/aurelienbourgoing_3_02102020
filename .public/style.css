@@ -345,6 +345,10 @@ header img {
   box-shadow: 1px 1px 3px grey;
   cursor: pointer;
 }
+.description_button:active {
+  box-shadow: 2px 2px 10px grey;
+  background: linear-gradient(to top left, #ae80e5, #fface8);
+}
 .description a {
   width: auto;
 }
