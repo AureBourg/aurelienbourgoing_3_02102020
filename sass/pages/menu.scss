@@ -80,6 +80,13 @@ header{
             &:hover > .carte_entree_plat_prix{
                 transform: translateX(-65px);
             }
+            &:hover > .carte_entree_plat_text{
+                height: 40px;
+                width: calc(100% - 110px);
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
             &:hover > .check > .fa-check-circle{
                 transform: rotate(-360deg);
             }
@@ -108,6 +115,13 @@ header{
             &:hover > .carte_plat_plat_prix{
                 transform: translateX(-65px);
             }
+            &:hover > .carte_plat_plat_text{
+                height: 40px;
+                width: calc(100% - 110px);
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
             &:hover > .check > .fa-check-circle{
                 transform: rotate(-360deg);
             }
@@ -135,6 +149,13 @@ header{
             &:hover > .carte_dessert_plat_prix{
                 transform: translateX(-65px);
             }
+            &:hover > .carte_dessert_plat_text{
+                height: 40px;
+                width: calc(100% - 110px);
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
             &:hover > .check > .fa-check-circle{
                 transform: rotate(-360deg);
             }
@@ -156,7 +177,7 @@ footer{
 .check{
     background-color: $tertiary-color;
     color: white;
-    padding: 20px;
+    padding: 50px 20px 50px 20px;
     font-size: 20px;
     border-radius: 0px 15px 15px 0px;
     position: absolute;

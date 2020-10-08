@@ -125,6 +125,7 @@ header a {
   position: relative;
   right: 10px;
   top: 10px;
+  padding-left: 15px;
 }
 .carte_entree_plat_prix {
   transition: transform 1000ms;
@@ -137,6 +138,13 @@ header a {
 }
 .carte_entree_plat:hover > .carte_entree_plat_prix {
   transform: translateX(-65px);
+}
+.carte_entree_plat:hover > .carte_entree_plat_text {
+  height: 40px;
+  width: calc(100% - 110px);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .carte_entree_plat:hover > .check > .fa-check-circle {
   transform: rotate(-360deg);
@@ -176,6 +184,7 @@ header a {
   position: relative;
   right: 10px;
   top: 10px;
+  padding-left: 15px;
 }
 .carte_plat_plat_prix {
   transition: transform 1000ms;
@@ -188,6 +197,13 @@ header a {
 }
 .carte_plat_plat:hover > .carte_plat_plat_prix {
   transform: translateX(-65px);
+}
+.carte_plat_plat:hover > .carte_plat_plat_text {
+  height: 40px;
+  width: calc(100% - 110px);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .carte_plat_plat:hover > .check > .fa-check-circle {
   transform: rotate(-360deg);
@@ -227,6 +243,7 @@ header a {
   position: relative;
   right: 10px;
   top: 10px;
+  padding-left: 15px;
 }
 .carte_dessert_plat_prix {
   transition: transform 1000ms;
@@ -239,6 +256,13 @@ header a {
 }
 .carte_dessert_plat:hover > .carte_dessert_plat_prix {
   transform: translateX(-65px);
+}
+.carte_dessert_plat:hover > .carte_dessert_plat_text {
+  height: 40px;
+  width: calc(100% - 110px);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .carte_dessert_plat:hover > .check > .fa-check-circle {
   transform: rotate(-360deg);
@@ -297,7 +321,7 @@ footer .footer_link2 p {
 .check {
   background-color: #99e2d0;
   color: white;
-  padding: 20px;
+  padding: 50px 20px 50px 20px;
   font-size: 20px;
   border-radius: 0px 15px 15px 0px;
   position: absolute;
