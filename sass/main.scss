@@ -18,6 +18,8 @@ h2{
     font-family: "Roboto-bold";
 }
 
+@include loader();
+
 header{
     text-align: center;
     padding: 10px;
@@ -57,9 +59,9 @@ header{
     }
     &_button{
         @include button();
-        &:active{
-            box-shadow: 2px 2px 10px grey;
-            background: linear-gradient(to top left, lighten($primary-color, 10%), lighten($secondary-color, 10%));
+        &:hover{
+            box-shadow: 2px 2px 7px grey;
+            background: linear-gradient(to top left, lighten($primary-color, 2%), lighten($secondary-color, 10%));
         }
     }
     & a{
