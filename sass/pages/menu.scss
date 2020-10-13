@@ -42,6 +42,7 @@ header{
                 cursor: pointer;
             }
             &:hover + .fas{
+                animation: anim-coeur 0.3s ease-in-out 1 backwards;
                 visibility: visible;
             }
         }
@@ -56,7 +57,11 @@ header{
             -webkit-text-fill-color: transparent;
             visibility: hidden;               
         }
-
+        @keyframes anim-coeur{
+            0%{scale: 0;}
+            80%{scale: 1.4;}
+            100%{scale: 1;}
+        }
     }
     &_entree{
         width: 100%;

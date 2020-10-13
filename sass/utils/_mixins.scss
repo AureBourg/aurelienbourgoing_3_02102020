@@ -6,7 +6,6 @@
         position: fixed;
         background-color: rgba(0,0,0,0.3);
         animation: back 6s forwards;
-        pointer-events: none;
     }
     .container {
         display: flex;
@@ -95,9 +94,10 @@
       66.6% {z-index: 1}
     }
     @keyframes back {
-        0% {opacity: 1;}
-        99%{opacity: 0.9;}
-        100%{opacity: 0;}
+        0% {scale: 1;}
+        98%{scale: 1; opacity: 1;}
+        99%{scale: 1; opacity: .1;}
+        100%{scale: 0; opacity: 0;}
     }
     @keyframes logo{
         0% {transform: scale(0)}
@@ -161,6 +161,7 @@
                     -webkit-text-fill-color: transparent;
                 }
                 &:hover + .fa-heart2{
+                    animation: anim-coeur 0.3s ease-in-out 1 backwards;
                     visibility: visible;
                 }
             }
@@ -174,7 +175,8 @@
                 background: -webkit-gradient(linear, left top, left bottom, from($primary-color), to($secondary-color));
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
-                visibility: hidden;               
+                visibility: hidden;
+                
             }
             & p{
                 font-family: "Roboto-light";
@@ -185,6 +187,11 @@
                 font-size: 13px;
             }
         }
+    @keyframes anim-coeur{
+        0%{scale: 0;}
+        80%{scale: 1.4;}
+        100%{scale: 1;}
+    }
 }
 
 @mixin new_icon {

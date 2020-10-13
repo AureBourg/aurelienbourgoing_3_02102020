@@ -77,6 +77,7 @@ header a {
   cursor: pointer;
 }
 .carte_head .far:hover + .fas {
+  animation: anim-coeur 0.3s ease-in-out 1 backwards;
   visibility: visible;
 }
 .carte_head .fas {
@@ -89,6 +90,17 @@ header a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   visibility: hidden;
+}
+@keyframes anim-coeur {
+  0% {
+    scale: 0;
+  }
+  80% {
+    scale: 1.4;
+  }
+  100% {
+    scale: 1;
+  }
 }
 .carte_entree {
   width: 100%;
@@ -355,7 +367,6 @@ h2 {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.3);
   animation: back 6s forwards;
-  pointer-events: none;
 }
 
 .container {
@@ -490,12 +501,18 @@ h2 {
 }
 @keyframes back {
   0% {
+    scale: 1;
+  }
+  98% {
+    scale: 1;
     opacity: 1;
   }
   99% {
-    opacity: 0.9;
+    scale: 1;
+    opacity: 0.1;
   }
   100% {
+    scale: 0;
     opacity: 0;
   }
 }
@@ -714,6 +731,7 @@ header img {
   -webkit-text-fill-color: transparent;
 }
 .restaurants_div_link1_text .fa-heart1:hover + .fa-heart2 {
+  animation: anim-coeur 0.3s ease-in-out 1 backwards;
   visibility: visible;
 }
 .restaurants_div_link1_text .fa-heart2 {
@@ -735,6 +753,17 @@ header img {
 .restaurants_div_link1_text span {
   font-family: "Roboto-bold";
   font-size: 13px;
+}
+@keyframes anim-coeur {
+  0% {
+    scale: 0;
+  }
+  80% {
+    scale: 1.4;
+  }
+  100% {
+    scale: 1;
+  }
 }
 .restaurants_div_link1_new {
   font-size: 11px;
@@ -786,6 +815,7 @@ header img {
   -webkit-text-fill-color: transparent;
 }
 .restaurants_div_link2_text .fa-heart1:hover + .fa-heart2 {
+  animation: anim-coeur 0.3s ease-in-out 1 backwards;
   visibility: visible;
 }
 .restaurants_div_link2_text .fa-heart2 {
@@ -807,6 +837,17 @@ header img {
 .restaurants_div_link2_text span {
   font-family: "Roboto-bold";
   font-size: 13px;
+}
+@keyframes anim-coeur {
+  0% {
+    scale: 0;
+  }
+  80% {
+    scale: 1.4;
+  }
+  100% {
+    scale: 1;
+  }
 }
 .restaurants_div_link2_new {
   font-size: 11px;
@@ -858,6 +899,7 @@ header img {
   -webkit-text-fill-color: transparent;
 }
 .restaurants_div_link3_text .fa-heart1:hover + .fa-heart2 {
+  animation: anim-coeur 0.3s ease-in-out 1 backwards;
   visibility: visible;
 }
 .restaurants_div_link3_text .fa-heart2 {
@@ -879,6 +921,17 @@ header img {
 .restaurants_div_link3_text span {
   font-family: "Roboto-bold";
   font-size: 13px;
+}
+@keyframes anim-coeur {
+  0% {
+    scale: 0;
+  }
+  80% {
+    scale: 1.4;
+  }
+  100% {
+    scale: 1;
+  }
 }
 .restaurants_div_link4 {
   height: 150px;
@@ -915,6 +968,7 @@ header img {
   -webkit-text-fill-color: transparent;
 }
 .restaurants_div_link4_text .fa-heart1:hover + .fa-heart2 {
+  animation: anim-coeur 0.3s ease-in-out 1 backwards;
   visibility: visible;
 }
 .restaurants_div_link4_text .fa-heart2 {
@@ -936,6 +990,17 @@ header img {
 .restaurants_div_link4_text span {
   font-family: "Roboto-bold";
   font-size: 13px;
+}
+@keyframes anim-coeur {
+  0% {
+    scale: 0;
+  }
+  80% {
+    scale: 1.4;
+  }
+  100% {
+    scale: 1;
+  }
 }
 
 footer {
