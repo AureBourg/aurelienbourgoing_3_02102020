@@ -564,7 +564,9 @@ header img {
   font-family: "Roboto-bold";
 }
 .description span {
+  display: inline-block;
   margin: 0px;
+  padding: 0px 20px 0px 20px;
   font-size: 14px;
   font-family: "Roboto-light";
 }
