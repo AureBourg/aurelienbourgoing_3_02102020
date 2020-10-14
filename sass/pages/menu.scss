@@ -121,7 +121,6 @@ header{
                 transform: translateX(-65px);
             }
             &:hover > .carte_plat_plat_text{
-                height: 40px;
                 width: calc(100% - 110px);
                 overflow: hidden;
                 white-space: nowrap;
@@ -168,7 +167,7 @@ header{
     }
 }
 @keyframes fondu{
-	0%{transform: translateY(-20px); opacity: 0}
+	0%{transform: translateY(10px); opacity: 0}
 	100%{transform: translateY(0px); opacity: 1}
 }
 

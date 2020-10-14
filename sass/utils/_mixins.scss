@@ -214,15 +214,15 @@
 
 @mixin button {
         font-family: "Roboto";
-        font-size: 11px;
+        font-size: 12px;
         text-align: center;
         color: white;
         background: linear-gradient(to top left, $primary-color, $secondary-color);
         border: none;
         height: 40px;
+        width: 170px;
         border-radius: 20px;
         margin: 15px 0px 15px 0px;
-        padding: 0px 20px 0px 20px;
         box-shadow: 1px 1px 3px grey;
         cursor: pointer;
 }

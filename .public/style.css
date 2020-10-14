@@ -31,9 +31,9 @@ header img {
   height: auto;
 }
 header a {
-  font-size: 24px;
+  font-size: 20px;
   position: absolute;
-  left: 10px;
+  left: 15px;
   color: black;
   text-decoration: none;
 }
@@ -211,7 +211,6 @@ header a {
   transform: translateX(-65px);
 }
 .carte_plat_plat:hover > .carte_plat_plat_text {
-  height: 40px;
   width: calc(100% - 110px);
   overflow: hidden;
   white-space: nowrap;
@@ -282,7 +281,7 @@ header a {
 
 @keyframes fondu {
   0% {
-    transform: translateY(-20px);
+    transform: translateY(10px);
     opacity: 0;
   }
   100% {
@@ -300,7 +299,10 @@ footer {
   font-size: 13px;
 }
 footer img {
+  width: 150px;
+  height: auto;
   margin-bottom: 15px;
+  margin-left: 8px;
   filter: invert(1);
 }
 footer a {
@@ -572,15 +574,15 @@ header img {
 }
 .description_button {
   font-family: "Roboto";
-  font-size: 11px;
+  font-size: 12px;
   text-align: center;
   color: white;
   background: linear-gradient(to top left, #9356dc, #ff79da);
   border: none;
   height: 40px;
+  width: 170px;
   border-radius: 20px;
   margin: 15px 0px 15px 0px;
-  padding: 0px 20px 0px 20px;
   box-shadow: 1px 1px 3px grey;
   cursor: pointer;
 }

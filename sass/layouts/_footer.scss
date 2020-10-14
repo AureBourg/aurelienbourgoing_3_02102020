@@ -7,7 +7,10 @@
     color: white;
     font-size: 13px;
     & img{
+        width: 150px;
+        height: auto;
         margin-bottom: 15px;
+        margin-left: 8px;
         filter: invert(1);
     }
     & a{
