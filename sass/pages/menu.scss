@@ -6,14 +6,19 @@ header{
     @include header-style_restaurants;
 }
 
-.background img{
+.background{
     height: 300px;
+    overflow: hidden;
+    img{
     width: 100%;
+    }
+
+
 }
 
 .carte{
     position: relative;
-    bottom: 50px;
+    bottom: 100px;
     background-color: #f4f4f4;
     border-radius: 20px 20px 0px 0px;
     padding: 20px;
@@ -173,8 +178,9 @@ header{
 
 
 
-footer{
+.footer_menu{
     @include footer-style();
+    margin-top: -100px;
 }
 
 

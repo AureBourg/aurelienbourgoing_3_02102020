@@ -132,7 +132,7 @@
 }
 
 @mixin restaurants_links {
-    height: 150px;
+    height: 170px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: -30px;
@@ -148,7 +148,7 @@
             border-radius: 0px 0px 15px 15px;
             padding: 10px 15px 10px 15px;
             position: relative;
-            top: 100px;
+            top: 120px;
             line-height: 15px;
             & .fa-heart1{
                 z-index: 2;

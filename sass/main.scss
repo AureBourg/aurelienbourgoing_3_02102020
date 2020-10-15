@@ -157,45 +157,165 @@ header{
     }
 }
 
-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    background: #2d2e2e;
-    padding: 15px;
-    color: white;
-    font-size: 13px;
-    & img{
-        margin-bottom: 15px;
+.footer_accueil{
+    @include footer-style(); 
+}
+
+
+/* ------------------------
+  |      MEDIA QUERY 1    |
+   ----------------------- */
+
+
+@media all and (min-width:481px) and (max-width:800px){
+
+    .fonctionnement{
+        &__steps{
+            width: 70%;
+            margin: auto;
+        }
     }
-    & a{
-        display: inline-block;
-        text-decoration: none;
-        color: white;
-        margin: 8px;
+
+    .restaurants{
+        &_div{
+            &_link1{
+                height: 200px;
+                &_text{
+                    top: 150px;
+                }
+                &_new{
+                    font-size: 13px;
+                }
+            }
+            &_link2{
+                height: 200px;
+                &_text{
+                    top: 150px;
+                }
+                &_new{
+                    font-size: 13px;
+                }
+            }
+            &_link3{
+                height: 200px;
+                &_text{
+                    top: 150px;
+                }
+            }
+            &_link4{
+                height: 200px;
+                &_text{
+                    top: 150px;
+                }
+            }
+        }
     }
-    & p{
-        margin: 0px;
+    
+}
+
+
+/* ------------------------
+  |      MEDIA QUERY 2    |
+   ----------------------- */
+
+@media all and (min-width:801px) and (max-width:1024px){
+
+    .fonctionnement{
+        &__steps{
+            width: 70%;
+            margin: auto;
+        }
+    }
+    .restaurants{
+        &_div{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            & a{
+                width: 45%;
+            }
+            &_link1{
+                height: 200px;
+                &_text{
+                    top: 150px;
+                }
+                &_new{
+                    font-size: 13px;
+                }
+            }
+            &_link2{
+                height: 200px;
+                &_text{
+                    top: 150px;
+                }
+                &_new{
+                    font-size: 13px;
+                }
+            }
+            &_link3{
+                height: 200px;
+                &_text{
+                    top: 150px;
+                }
+            }
+            &_link4{
+                height: 200px;
+                &_text{
+                    top: 150px;
+                }
+            }
+        }
     }
 }
-.footer{
-    &_link1{
-        display: flex;
-        align-items: center;
-        & p{
-            margin-left: 10px;
+
+
+@media all and (min-width:1025px){
+
+    .fonctionnement{
+        &__steps{
+            width: 50%;
+            margin: auto;
         }
-        & i{
-            font-size: 1em;
-        }
-   
     }
-    &_link2{
-        display: flex;
-        align-items: center;
-        & p{
-            margin-left: 10px;
+    .restaurants{
+        &_div{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            & a{
+                width: 45%;
+            }
+            &_link1{
+                height: 250px;
+                &_text{
+                    top: 200px;
+                }
+                &_new{
+                    font-size: 13px;
+                }
+            }
+            &_link2{
+                height: 250px;
+                &_text{
+                    top: 200px;
+                }
+                &_new{
+                    font-size: 13px;
+                }
+            }
+            &_link3{
+                height: 250px;
+                &_text{
+                    top: 200px;
+                }
+            }
+            &_link4{
+                height: 250px;
+                &_text{
+                    top: 200px;
+                }
+            }
         }
-    } 
+    }
 }
 
