@@ -135,7 +135,7 @@ header{
             &_link1 {
                @include restaurants_links();
                background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-               background-position-y: -70px;
+               background-position-y: -65px;
                @include new_icon();
             }
             &_link2{
@@ -147,12 +147,12 @@ header{
             &_link3{
                 @include restaurants_links();
                 background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-                background-position-y: -90px;
+                background-position-y: -65px;
             }
             &_link4{
                 @include restaurants_links();
                 background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-                background-position-y: -80px;
+                background-position-y: -70px;
             }
     }
 }
@@ -162,12 +162,18 @@ header{
 }
 
 
+
+
+
+
+
+
 /* ------------------------
   |      MEDIA QUERY 1    |
    ----------------------- */
 
 
-@media all and (min-width:481px) and (max-width:800px){
+@media all and (min-width:481px) and (max-width:640px){
 
     .fonctionnement{
         &__steps{
@@ -180,6 +186,7 @@ header{
         &_div{
             &_link1{
                 height: 200px;
+                background-position-y: -130px;
                 &_text{
                     top: 150px;
                 }
@@ -198,12 +205,14 @@ header{
             }
             &_link3{
                 height: 200px;
+                background-position-y: -130px;
                 &_text{
                     top: 150px;
                 }
             }
             &_link4{
                 height: 200px;
+                background-position-y: -130px;
                 &_text{
                     top: 150px;
                 }
@@ -214,8 +223,66 @@ header{
 }
 
 
+
+
 /* ------------------------
   |      MEDIA QUERY 2    |
+   ----------------------- */
+
+
+   @media all and (min-width:641px) and (max-width:800px){
+
+    .fonctionnement{
+        &__steps{
+            width: 70%;
+            margin: auto;
+        }
+    }
+
+    .restaurants{
+        &_div{
+            &_link1{
+                height: 210px;
+                background-position-y: -170px;
+                &_text{
+                    top: 160px;
+                }
+                &_new{
+                    font-size: 13px;
+                }
+            }
+            &_link2{
+                height: 210px;
+                background-position-y: -150px;
+                &_text{
+                    top: 160px;
+                }
+                &_new{
+                    font-size: 13px;
+                }
+            }
+            &_link3{
+                height: 210px;
+                background-position-y: -170px;
+                &_text{
+                    top: 160px;
+                }
+            }
+            &_link4{
+                height: 210px;
+                background-position-y: -150px;
+                &_text{
+                    top: 160px;
+                }
+            }
+        }
+    }
+    
+}
+
+
+/* ------------------------
+  |      MEDIA QUERY 3    |
    ----------------------- */
 
 @media all and (min-width:801px) and (max-width:1024px){
@@ -270,11 +337,11 @@ header{
 
 
 /* ------------------------
-  |      MEDIA QUERY 3    |
+  |      MEDIA QUERY 4    |
    ----------------------- */
 
 
-@media all and (min-width:1025px){
+@media all and (min-width:1025px) and (max-width:1600px){
 
     .fonctionnement{
         &__steps{
@@ -292,6 +359,7 @@ header{
             }
             &_link1{
                 height: 250px;
+                background-position-y: -90px;
                 &_text{
                     top: 200px;
                 }
@@ -301,6 +369,7 @@ header{
             }
             &_link2{
                 height: 250px;
+                background-position-y: -170px;
                 &_text{
                     top: 200px;
                 }
@@ -310,14 +379,78 @@ header{
             }
             &_link3{
                 height: 250px;
+                background-position-y: -90px;
                 &_text{
                     top: 200px;
                 }
             }
             &_link4{
                 height: 250px;
+                background-position-y: -90px;
                 &_text{
                     top: 200px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/* ------------------------
+  |      MEDIA QUERY 5    |
+   ----------------------- */
+
+
+   @media all and (min-width:1601px){
+
+    .fonctionnement{
+        &__steps{
+            width: 50%;
+            margin: auto;
+        }
+    }
+    .restaurants{
+        &_div{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            & a{
+                width: 45%;
+            }
+            &_link1{
+                height: 270px;
+                background-position-y: -170px;
+                &_text{
+                    top: 220px;
+                }
+                &_new{
+                    font-size: 13px;
+                }
+            }
+            &_link2{
+                height: 270px;
+                background-position-y: -200px;
+                &_text{
+                    top: 220px;
+                }
+                &_new{
+                    font-size: 13px;
+                }
+            }
+            &_link3{
+                height: 270px;
+                background-position-y: -190px;
+                &_text{
+                    top: 220px;
+                }
+            }
+            &_link4{
+                height: 270px;
+                background-position-y: -190px;
+                &_text{
+                    top: 220px;
                 }
             }
         }
